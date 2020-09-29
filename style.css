@@ -1,0 +1,44 @@
+body {
+}
+
+.carousel {
+  max-width: 600px;
+  position: relative;
+}
+
+div .carousel-item {
+  display: none;
+  max-width: 600px;
+}
+
+img {
+  max-width: 100%;
+}
+
+div .carousel-item-visible {
+  display: inline-block;
+}
+
+button {
+  position: absolute;
+  top: 55%;
+  display: inline-block;
+  padding: 5px 15px;
+  border-radius: 10px 10px 10px 10px;
+  border: none;
+}
+
+#carousel-btn-prev {
+  margin-left: 5%;
+}
+
+#carousel-btn-nxt {
+  right: 0;
+  margin-right: 10%;
+}
+
+button:hover,
+button:focus {
+  background-color: #4c85c5;
+  outline: none;
+}
