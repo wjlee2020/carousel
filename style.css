@@ -18,6 +18,7 @@ img {
 
 div .carousel-item-visible {
   display: block;
+  animation: fadeVisability 500ms;
 }
 
 #carousel #carousel-actions {
@@ -46,8 +47,19 @@ div .carousel-item-visible {
   margin-right: 40px;
 }
 
-#carousel #carousel-actions button:hover,
-#carousel #carousel-actions button:focus {
+#carousel #carousel-actions button:hover {
   background-color: #4c85c5;
+}
+
+button:focus {
   outline: none;
+}
+
+@keyframes fadeVisability {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
