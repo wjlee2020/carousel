@@ -9,12 +9,20 @@ function hideAllSlides() {
   }
 }
 
-function moveToPrevSlide() {}
+function moveToPrevSlide() {
+  hideAllSlides();
+  if (slidePosition === 0) {
+    slidePosition = totalSlides - 1;
+  } else {
+    slidePosition--;
+  }
+  slides[slidePosition].classList.add("carousel-item-visible");
+}
 
 function moveToNextSlide() {
   hideAllSlides();
   if (slidePosition === totalSlides - 1) {
-    // set it to -1 because our array doesn't go above 2. once above 2, it'll get error. the -1 will return it back to the first picture//
+    // set it to -1 because our array doesn't go above 2. once above 2, it'll get error//
     slidePosition = 0;
   } else {
     slidePosition++;
